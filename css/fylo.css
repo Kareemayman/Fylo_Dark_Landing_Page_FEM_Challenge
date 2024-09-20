@@ -1,0 +1,62 @@
+/* Start Variables */
+:root {
+
+}
+/* End Variables */
+
+/* Start Global Rules */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+/* End Global Rules */
+
+/* Start Local Rules */
+/* End Local Rules */
+
+/* Start Media Queries */
+@media (width <= 769px) {
+    
+}
+/* Container Queries */
+@media (min-width: 769px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Media Queries */
