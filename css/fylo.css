@@ -1,10 +1,33 @@
 /* Start Variables */
 :root {
+    --intro-and-email-background: hsl(217, 28%, 15%);
+    --main-background: hsl(218, 28%, 13%);
+    --footer-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+    --Light-Red-error: hsl(0, 100%, 63%);
+    --blue: hsl(198, 60%, 50%);
+    --cyan: hsl(176, 68%, 64%);
+    
+    --body-font-size: 14px;
 
+    --font-light: 400;
+    --font-bold: 700;
 }
 /* End Variables */
 
 /* Start Global Rules */
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
