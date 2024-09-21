@@ -19,13 +19,13 @@
 /* End Variables */
 
 /* Start Global Rules */
-.raleway {
+.raleway, h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
-.open-sans {
+.open-sans, p {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -92,6 +92,68 @@ header .container .links a:hover {
     color: white;
     text-decoration: underline;
 }
+
+main .intro {
+    background-color: var(--intro-and-email-background);
+}
+
+main .intro .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+main .intro .intro-img img {
+    max-width: 100%;
+}
+
+main .intro .container h1 {
+    color: white;
+    font-weight: var(--font-bold);
+    width: 720px;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main .intro .container p {
+    color: rgb(230, 230, 230);
+    width: 600px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+main .intro .container a {
+    text-align: center;
+    color: white;
+    font-weight: var(--font-light);
+    padding: 15px 80px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--cyan), var(--blue));
+    margin-top: 30px;
+    transition: var(--main-trans);
+}
+
+main .intro .container a:hover {
+    background-image: linear-gradient(to right, var(--cyan), var(--cyan));
+}
+
+main .intro .curvy-background {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height: 300px;
+    margin-top: -300px;
+}
+
+.features {
+    background-color: var(--main-background);
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
@@ -108,6 +170,20 @@ header .container .links a:hover {
     header .container .links {
         gap: 15px;
         font-size: var(--body-font-size);
+    }
+
+    main .intro .container h1 {
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+    main .intro .container p {
+        width: 300px;
+        font-size: 0.9rem;
+    }
+
+    main .intro .curvy-background {
+        display: none;
     }
 }
 /* Container Queries */
