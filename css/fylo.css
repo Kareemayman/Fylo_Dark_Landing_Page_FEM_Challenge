@@ -7,11 +7,14 @@
     --Light-Red-error: hsl(0, 100%, 63%);
     --blue: hsl(198, 60%, 50%);
     --cyan: hsl(176, 68%, 64%);
-    
+    --almost-white: rgb(209, 209, 209);
+
     --body-font-size: 14px;
 
     --font-light: 400;
     --font-bold: 700;
+
+    --main-trans: 0.3s;
 }
 /* End Variables */
 
@@ -58,11 +61,54 @@ ul {
 /* End Global Rules */
 
 /* Start Local Rules */
+header {
+    background-color: var(--intro-and-email-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo img {
+    max-width: 100%;
+}
+
+header .container .links {
+    display: flex;
+    gap: 40px;
+}
+
+header .container .links a {
+    color: var(--almost-white);
+    font-weight: var(--font-light);
+    transition: var(--main-trans);
+}
+
+header .container .links a:hover {
+    color: white;
+    text-decoration: underline;
+}
 /* End Local Rules */
 
 /* Start Media Queries */
 @media (width <= 769px) {
-    
+    header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    header .container .logo {
+        width: 30%;
+    }
+
+    header .container .links {
+        gap: 15px;
+        font-size: var(--body-font-size);
+    }
 }
 /* Container Queries */
 @media (min-width: 769px) {
@@ -80,6 +126,12 @@ ul {
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1300px;
     }
 }
 /* End Media Queries */
