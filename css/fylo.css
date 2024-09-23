@@ -154,9 +154,50 @@ main .intro .curvy-background {
     background-color: var(--main-background);
 }
 
+.features .container {
+    display: flex;
+    padding-top: 60px;
+    color: var(--almost-white);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features .container .feat {
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.features .container .feat h3 {
+    margin: 10px 0;
+}
+
+.features .container .feat p {
+    color: var(--almost-white);
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
+@media (width <= 992px) {
+    .features .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features .container .feat {
+        margin-bottom: 60px;
+    }
+
+    .features .container .feat p {
+        width: 300px;
+    }
+}
 @media (width <= 769px) {
     header {
         padding-top: 30px;
