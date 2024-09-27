@@ -181,6 +181,65 @@ main .intro .curvy-background {
     font-size: 14px;
 }
 
+.team {
+    background-color: var(--main-background);
+}
+
+.team .container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding-bottom: 120px;
+}
+
+.team .team-img {
+    width: 80%;
+}
+
+.team .team-img img {
+    max-width: 100%;
+}
+
+.team .container h1 {
+    font-size: 2.5rem;
+    color: white;
+    width: 400px;
+    line-height: 1.3;
+}
+
+.team .container .info p {
+    color: var(--almost-white);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.team .container .info a {
+    color: var(--cyan);
+    font-size: 18px;
+    position: relative;
+    transition: var(--main-trans);
+}
+
+.team .container .info a::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--cyan);
+    width: 105%;
+    bottom: -10px;
+    left: 0;
+    border-radius: 10px;
+    transition: var(--main-trans);
+}
+
+.team .container .info a:hover::after {
+    background-color: white;
+}
+
+.team .container .info a:hover {
+    color: white;
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
@@ -197,6 +256,21 @@ main .intro .curvy-background {
     .features .container .feat p {
         width: 300px;
     }
+
+    .team .container {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .team .team-img {
+        width: 100%;
+    }
+
+    .team .container h1 {
+        width: fit-content;
+        font-size: 20px;
+    }
+
 }
 @media (width <= 769px) {
     header {
