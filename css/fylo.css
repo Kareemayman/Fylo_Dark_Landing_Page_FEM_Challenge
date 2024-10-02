@@ -183,6 +183,7 @@ main .intro .curvy-background {
 
 .team {
     background-color: var(--main-background);
+    padding-top: 60px;
 }
 
 .team .container {
@@ -238,6 +239,72 @@ main .intro .curvy-background {
 
 .team .container .info a:hover {
     color: white;
+}
+
+.team .container:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.team .container:last-of-type .card {
+    position: relative;
+    padding: 40px 30px 20px;
+    background-color: var(--testimonials-background);
+    /* border-radius: 6px; */
+    box-shadow: 10px 5px 6px 1px rgba(126, 126, 126, 0.055);
+}
+
+.team .container:last-of-type .card p {
+    color: var(--almost-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.team .container:last-of-type .card .flex {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.team .container:last-of-type .card .flex .test-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.team .container:last-of-type .card .flex .test-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.team .container:last-of-type .card .flex h4 {
+    color: var(--almost-white);
+
+}
+
+.team .container:last-of-type .card .flex p {
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.team .container:last-of-type .card:first-of-type {
+    z-index: 5;
+}
+
+.team .container:last-of-type .card .quote-img {
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    z-index: 1;
+}
+
+.team .container:last-of-type .card .quote-img img {
+    max-width: 100%;
 }
 
 /* End Local Rules */
