@@ -369,6 +369,22 @@ main .intro .curvy-background {
     background-image: linear-gradient(to right, var(--cyan), var(--cyan));
 }
 
+.sign-in .validation {
+    margin: 0;
+    padding: 0;
+}
+
+.sign-in .validation p {
+    color: var(--Light-Red-error);
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-weight: var(--font-bold);
+    padding: 5px 40px 0;
+    position: absolute;
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
