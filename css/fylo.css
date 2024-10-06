@@ -308,6 +308,10 @@ main .intro .curvy-background {
     max-width: 100%;
 }
 
+.sign-in {
+    background-color: var(--footer-background);
+}
+
 .sign-in .card {
     background-color: var(--intro-and-email-background);
     color: white;
@@ -385,6 +389,78 @@ main .intro .curvy-background {
     position: absolute;
 }
 
+footer {
+    background-color: var(--footer-background);
+    padding-bottom: 60px;
+    margin-top: -90px;
+}
+
+footer .logo img {
+    max-width: 100%;
+}
+
+footer .grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: var(--almost-white);
+}
+
+footer .location {
+    width: 360px;
+}
+
+footer .grid .location,
+footer .grid .phone,
+footer .grid .email {
+    display: flex;
+    gap: 30px;
+}
+
+footer .grid .phone {
+    padding-bottom: 20px;
+}
+
+footer .grid .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .grid .about a {
+    color: var(--almost-white);
+    transition: var(--main-trans);
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+footer .grid .about a:hover {
+    color: white;
+}
+
+footer .social {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+footer .social i {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--main-trans);
+}
+
+footer .social i:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
 /* End Local Rules */
 
 /* Start Media Queries */
@@ -452,6 +528,24 @@ main .intro .curvy-background {
 
     main .intro .curvy-background {
         display: none;
+    }
+
+    footer {
+        margin-top: -160px;
+        font-size: 14px;
+    }
+
+    footer .grid {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    footer .grid .location {
+        width: fit-content;
+    }
+
+    footer .social {
+        justify-content: center;
     }
 }
 /* Container Queries */
